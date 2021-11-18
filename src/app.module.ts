@@ -1,11 +1,11 @@
-import { Module } from '@nestjs/common'
-import { ConfigModule, ConfigService } from '@nestjs/config'
-import { TypeOrmModule, TypeOrmModuleOptions } from '@nestjs/typeorm'
-import * as Joi from 'joi'
-import { SnakeNamingStrategy } from 'typeorm-naming-strategies'
-import { AppController } from './app.controller'
-import { UserEntity } from './users/users.entity'
-import { UsersModule } from './users/users.module'
+import { Module } from '@nestjs/common';
+import { ConfigModule, ConfigService } from '@nestjs/config';
+import { TypeOrmModule, TypeOrmModuleOptions } from '@nestjs/typeorm';
+import * as Joi from 'joi';
+import { SnakeNamingStrategy } from 'typeorm-naming-strategies';
+import { AppController } from './app.controller';
+import { UserEntity } from './users/users.entity';
+import { UsersModule } from './users/users.module';
 
 const typeOrmModuleOptions = {
   useFactory: async (
@@ -25,7 +25,7 @@ const typeOrmModuleOptions = {
     keepConnectionAlive: true,
   }),
   inject: [ConfigService],
-}
+};
 
 @Module({
   imports: [
