@@ -1,6 +1,6 @@
-require('dotenv/config')
+require('dotenv/config');
 /* eslint @typescript-eslint/no-var-requires: 0 */
-const { SnakeNamingStrategy } = require('typeorm-naming-strategies')
+const { SnakeNamingStrategy } = require('typeorm-naming-strategies');
 
 module.exports = {
   type: 'postgres',
@@ -19,4 +19,4 @@ module.exports = {
   migrations: ['migrations/**/*.ts'],
   cli: { migrationsDir: 'migrations' },
   seeds: ['src/seeds/**/*.ts'],
-}
+};
