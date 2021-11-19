@@ -1,5 +1,7 @@
 # TypeORM In The Nest
 
+> NestJS, TypeORM, Jest, Passport boilerplate
+
 ## Config .env
 
 ```.env
