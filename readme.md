@@ -2,6 +2,11 @@
 
 > NestJS, TypeORM, Jest, Passport boilerplate
 
+## Using ORM CLI
+
+- `npm run orm`
+- `npm run orm migration:create -- -n <migration name>`
+
 ## Config .env
 
 ```.env
